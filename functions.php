@@ -51,6 +51,26 @@ function wpfromscratchwptheme_widget_init() {
         'before-title'  => '<h2 class="widget-title">',
         'after-title'   => '</h2>'
     ] );
+
+    register_sidebar( [
+        'name'          => esc_html__( 'Page Sidebar', 'wpfromscratchwptheme' ),
+        'id'            => 'page-sidebar',
+        'description'   => esc_html__( 'Page sidebar widget area.', 'wpfromscratchwptheme' ),
+        'before-widget' => '<section class="page-widget">',
+        'after-widget'  => '</section>',
+        'before-title'  => '<h2 class="widget-title">',
+        'after-title'   => '</h2>'
+    ] );
+
+    register_sidebar( [
+        'name'          => esc_html__( 'Front Page Sidebar', 'wpfromscratchwptheme' ),
+        'id'            => 'front-page',
+        'description'   => esc_html__( 'Front page sidebar widget area.', 'wpfromscratchwptheme' ),
+        'before-widget' => '<section class="front-page-widget">',
+        'after-widget'  => '</section>',
+        'before-title'  => '<h2 class="front-page-widget-title">',
+        'after-title'   => '</h2>'
+    ] );
 }
 
 add_action( 'widgets_init',  'wpfromscratchwptheme_widget_init' );

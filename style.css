@@ -562,8 +562,22 @@ blockquote.right {
 }
 
 
+/*--------------------------------------------------------------
+# Custom CSS
+--------------------------------------------------------------*/
 
+/* Front Page CSS */
+#secondary.front-page-widget-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: yellow;
+}
 
+.widget {
+    flex: 1;
+    min-width: 300px;
+}
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
