@@ -5,7 +5,6 @@
     </header>
 
     <div class="entry-content">
-        <h2>This is page content</h2>
         <?php the_content(); ?>
     </div>
 </article>

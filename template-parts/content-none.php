@@ -6,6 +6,8 @@
 
     <div class="entry-content">
         <p><?php esc_html_e( 'The content you are looking for has left the building.', 'wpfromscratchwptheme') ?></p>
+
+        <p><?php echo get_search_form(); ?></p>
     </div>
 
 </article>
